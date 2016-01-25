@@ -30,6 +30,8 @@ namespace NinjaMp3Editor
             _Worker.LogChanged += new EventHandler<LogChangedArgs>(OnWorkerLogChanged);
             _Worker.ProcessStarted += new EventHandler(OnWorkerProcessStarted);
             _Worker.ProcessFinished += new EventHandler(OnWorkerProcessFinished);
+            _Worker.ProcessResumed += new EventHandler(OnWorkerProcessResumed);
+            _Worker.ProcessPaused += new EventHandler(OnWorkerProcessPaused);
             
             txtFolderPath.Text = @"C:\Users\moo\Music\CMA";
 
@@ -171,6 +173,7 @@ namespace NinjaMp3Editor
             }
             btnSelectFolder.Enabled = false;
             btnStart.Enabled = true;
+            btnStart.Text = "Pause";
             _IsStarted = true;
             btnCancel.Enabled = true;
             btnClear.Enabled = false;
@@ -189,6 +192,7 @@ namespace NinjaMp3Editor
             }
             btnSelectFolder.Enabled = false;
             btnStart.Enabled = true;
+            btnStart.Text = "Start";
             _IsStarted = false;
             btnCancel.Enabled = false;
             btnClear.Enabled = true;
@@ -198,6 +202,44 @@ namespace NinjaMp3Editor
                 _Thread.Interrupt();
                 _Thread = null;
             }
+        }
+
+        private void OnWorkerProcessResumed(object sender, EventArgs e)
+        {
+            //cross thread - so you don't get the cross theading exception
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke((MethodInvoker)delegate
+                {
+                    OnWorkerProcessResumed(sender, e);
+                });
+                return;
+            }
+            btnSelectFolder.Enabled = false;
+            btnStart.Enabled = true;
+            btnStart.Text = "Pause";
+            _IsStarted = true;
+            btnCancel.Enabled = true;
+            btnClear.Enabled = false;
+        }
+
+        private void OnWorkerProcessPaused(object sender, EventArgs e)
+        {
+            //cross thread - so you don't get the cross theading exception
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke((MethodInvoker)delegate
+                {
+                    OnWorkerProcessPaused(sender, e);
+                });
+                return;
+            }
+            btnSelectFolder.Enabled = false;
+            btnStart.Enabled = true;
+            btnStart.Text = "Remuse";
+            _IsStarted = false;
+            btnCancel.Enabled = true;
+            btnClear.Enabled = false;
         }
         #endregion
 

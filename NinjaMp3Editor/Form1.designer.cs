@@ -78,7 +78,7 @@
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(95, 23);
             this.btnStart.TabIndex = 6;
-            this.btnStart.Text = "Start / Pause";
+            this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 

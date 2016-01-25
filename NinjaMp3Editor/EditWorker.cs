@@ -248,7 +248,10 @@ namespace NinjaMp3Editor
         public void DoWork()
         {
             _shouldStop = false;
-            OnProcessStarted(new EventArgs());
+
+            if (_FileIndex > 0) OnProcessResumed(new EventArgs());
+            else OnProcessStarted(new EventArgs());
+            
             while (!_shouldStop)
             {
                 var reset = this.Override;
@@ -372,6 +375,7 @@ namespace NinjaMp3Editor
         public void RequestPause()
         {
             _shouldStop = true;
+            OnProcessPaused(new EventArgs());
         }
 
         public void RequestCancel()
@@ -398,6 +402,25 @@ namespace NinjaMp3Editor
                 ProcessFinished(this, e);
             }
         }
+
+        public event EventHandler ProcessResumed;
+        protected void OnProcessResumed(EventArgs e)
+        {
+            if (ProcessResumed != null)
+            {
+                ProcessResumed(this, e);
+            }
+        }
+
+        public event EventHandler ProcessPaused;
+        protected void OnProcessPaused(EventArgs e)
+        {
+            if (ProcessPaused != null)
+            {
+                ProcessPaused(this, e);
+            }
+        }
+
         public event EventHandler ProcessStarted;
         protected void OnProcessStarted(EventArgs e)
         {

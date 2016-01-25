@@ -12,3 +12,17 @@ c:\users\moo\documents\visual studio 2013\Projects\NinjaMp3Editor\NinjaMp3Editor
 c:\users\moo\documents\visual studio 2013\Projects\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.Form1.resources
 c:\users\moo\documents\visual studio 2013\Projects\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.exe
 c:\users\moo\documents\visual studio 2013\Projects\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.pdb
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\NinjaMp3Editor.exe.config
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.exe
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.pdb
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\NinjaMp3Editor.exe
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\NinjaMp3Editor.pdb
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\Hqub.Lastfm.dll
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\Mono.HttpUtility.dll
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\policy.2.0.taglib-sharp.dll
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\taglib-sharp.dll
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.csprojResolveAssemblyReference.cache
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.Form1.resources
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.Properties.Resources.resources
+C:\Users\moo\Documents\GitHub\NinjaMp3Editor\NinjaMp3Editor\obj\Debug\NinjaMp3Editor.csproj.GenerateResource.Cache
